@@ -17,14 +17,14 @@ function App() {
   ];
 
   return (
-    <div className="min-h-screen p-6">
+    <div className="min-h-screen p-6 text-center">
       <h1 className="text-3xl font-bold mb-8">Topics</h1>
 
       {topics.map((topic, index) => (
         <div key={index} className="mb-10">
           <h2 className="text-xl font-semibold">{topic.title}</h2>
           <hr className="my-4 border-gray-300" />
-          <div className="flex gap-4 flex-wrap">
+          <div className="flex gap-4 flex-wrap justify-center">
             {topic.buttons.map((label, idx) => (
               <button
                 key={idx}
