@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function App() {
+function Topics() {
   const topics = [
     {
       title: "Immigration",
@@ -61,4 +61,4 @@ function App() {
   );
 }
 
-export default App;
+export default Topics;
