@@ -28,6 +28,12 @@ function NavBar() {
         >
           Forms
         </Link>
+        <Link
+          to="/find_help"
+          className="text-blue-600 hover:underline text-xl font-[Merriweather] font-bold"
+        >
+          Find Help
+        </Link>
       </nav>
     </div>
   );

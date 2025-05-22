@@ -5,6 +5,7 @@ import App from "./App.jsx";
 import Home from "./pages/Home.jsx";
 import Topics from "./pages/Topics.jsx";
 import Forms from "./pages/Forms.jsx";
+import FindHelp from "./pages/FindHelp.jsx";
 import PageNotFound from "./pages/PageNotFound.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -16,6 +17,7 @@ createRoot(document.getElementById("root")).render(
           <Route index element={<Home />} />
           <Route path="topics" element={<Topics />} />
           <Route path="forms" element={<Forms />} />
+          <Route path="find_help" element={<FindHelp />} />
           <Route path="*" element={<PageNotFound />} />
         </Route>
       </Routes>
