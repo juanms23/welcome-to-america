@@ -34,6 +34,12 @@ function NavBar() {
         >
           Find Help
         </Link>
+        <Link
+          to="/about"
+          className="text-blue-600 hover:underline text-xl font-[Merriweather] font-bold"
+        >
+          About
+        </Link>
       </nav>
     </div>
   );
