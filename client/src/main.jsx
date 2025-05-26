@@ -11,6 +11,9 @@ import Undocumented from "./pages/Undocumented.jsx";
 import K12 from "./pages/K-12.jsx";
 import About from "./pages/About.jsx";
 import PageNotFound from "./pages/PageNotFound.jsx";
+import MentalHealth from "./pages/MentalHealth.jsx";
+import Healthcare from "./pages/Healthcare.jsx";
+import ReproductiveHealth from "./pages/ReproductiveHealth.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 createRoot(document.getElementById("root")).render(
@@ -26,6 +29,9 @@ createRoot(document.getElementById("root")).render(
           <Route path="undocumented" element={<Undocumented />} />
           <Route path="k-12" element={<K12 />} />
           <Route path="about" element={<About />} />
+          <Route path="mental-health" element={<MentalHealth />} />
+          <Route path="healthcare" element={<Healthcare />} />
+          <Route path="reproductive-health" element={<ReproductiveHealth />} />
           <Route path="*" element={<PageNotFound />} />
         </Route>
       </Routes>
