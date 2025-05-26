@@ -23,7 +23,7 @@ function Topics() {
       buttons: [
         { label: "Mental Health", to: "/Mental-health" },
         { label: "Healthcare", to: "/Healthcare" },
-        { label: "Reproductive", to: "/Reproductive" },
+        { label: "Reproductive", to: "/Reproductive-health" },
       ],
     },
     {
