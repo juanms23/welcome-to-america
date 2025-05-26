@@ -7,6 +7,8 @@ import Topics from "./pages/Topics.jsx";
 import Forms from "./pages/Forms.jsx";
 import FindHelp from "./pages/FindHelp.jsx";
 import Registration from "./pages/Registration.jsx";
+import Undocumented from "./pages/Undocumented.jsx";
+import K12 from "./pages/K-12.jsx";
 import About from "./pages/About.jsx";
 import PageNotFound from "./pages/PageNotFound.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -21,6 +23,8 @@ createRoot(document.getElementById("root")).render(
           <Route path="forms" element={<Forms />} />
           <Route path="find_help" element={<FindHelp />} />
           <Route path="registration" element={<Registration />} />
+          <Route path="undocumented" element={<Undocumented />} />
+          <Route path="k-12" element={<K12 />} />
           <Route path="about" element={<About />} />
           <Route path="*" element={<PageNotFound />} />
         </Route>

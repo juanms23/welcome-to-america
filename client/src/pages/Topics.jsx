@@ -29,9 +29,9 @@ function Topics() {
     {
       title: "Education",
       buttons: [
-        { label: "Undocumented", to: "/Undocumented" },
         { label: "Financial Aid", to: "/Financial-aid" },
         { label: "K-12", to: "/K-12" },
+        { label: "Undocumented", to: "/Undocumented" },
       ],
     },
   ];
