@@ -14,6 +14,8 @@ import PageNotFound from "./pages/PageNotFound.jsx";
 import MentalHealth from "./pages/MentalHealth.jsx";
 import Healthcare from "./pages/Healthcare.jsx";
 import ReproductiveHealth from "./pages/ReproductiveHealth.jsx";
+import GreenCards from "./pages/GreenCards.jsx";
+import LegalSupport from "./pages/LegalSupport.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 createRoot(document.getElementById("root")).render(
@@ -26,6 +28,8 @@ createRoot(document.getElementById("root")).render(
           <Route path="forms" element={<Forms />} />
           <Route path="find_help" element={<FindHelp />} />
           <Route path="registration" element={<Registration />} />
+          <Route path="green-cards" element={<GreenCards />} />
+          <Route path="legal-support" element={<LegalSupport />} />
           <Route path="undocumented" element={<Undocumented />} />
           <Route path="k-12" element={<K12 />} />
           <Route path="about" element={<About />} />
