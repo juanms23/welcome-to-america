@@ -4,8 +4,9 @@ function Resources() {
   const resources = [
     {
       buttons: [
-        { label: "USCIS Account Creation", to: "https://myaccount.uscis.gov/sign-in" },
-        { label: "Selective Service Registration", to: "https://www.sss.gov/register/" },
+        { label: "Executive Office for Immigration Review", to: "https://www.justice.gov/eoir" },
+        { label: "EOIR Free and Low-Cost Legal Service Providers", to: "https://www.justice.gov/eoir/list-pro-bono-legal-service-providers" },
+        { label: "Immi - Anonymous Legal Planmaking", to: "https://www.immi.org/en"},
       ],
     },
   ];
@@ -14,8 +15,8 @@ function Resources() {
     <div className="min-h-screen p-6">
       <h1 className="text-3xl text-center font-bold mb-8">Registration</h1>
       <p className="max-w-2xl mx-auto mb-8 text-center text-lg text-gray-700">
-        Below are key registration links for new immigrants. Creating an account with USCIS is an important first step, as it allowed you to create and manage immigration applications
-        online. Selective Service Registration is required for males aged 18 to 25 living in the U.S. The SAVE casecheck lets you check the status of your immigration records.
+        Below are several useful legal resources for immigrants. One of the most important legal resources to utilize is 
+        the Executive Office for Immigration Review's website, which allows you to check immigration court case status, find immigration courts, and access free and low-cost legal help. Additionally, the immi online interview allows you to recieve personalized results explaining immigration options, based on an anonymous survey. It also has options to make a plan if you are concerned about being detained or deported.
       </p>
       {resources.map((form, index) => (
         <div key={index} className="mb-10">
