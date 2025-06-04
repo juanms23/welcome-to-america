@@ -5,33 +5,33 @@ function Topics() {
     {
       title: "Immigration",
       buttons: [
-        { label: "Registration", to: "/Registration" },
-        { label: "Green Cards", to: "/Green-cards" },
-        { label: "Legal Support", to: "/Legal-support" },
+        { label: "Registration", to: "/registration" },
+        { label: "Green Cards", to: "/green-cards" },
+        { label: "Legal Support", to: "/legal-support" },
       ],
     },
     {
       title: "Work & Life",
       buttons: [
-        { label: "Driver's Licenses", to: "/Drivers-licenses" },
-        { label: "Government Assistance", to: "/Government-assistance" },
-        { label: "Employment", to: "/Employment" },
+        { label: "Driver's Licenses", to: "/drivers-licenses" },
+        { label: "Government Assistance", to: "/government-assistance" },
+        { label: "Employment", to: "/employment" },
       ],
     },
     {
       title: "Health",
       buttons: [
-        { label: "Mental Health", to: "/Mental-health" },
-        { label: "Healthcare", to: "/Healthcare" },
-        { label: "Reproductive", to: "/Reproductive-health" },
+        { label: "Mental Health", to: "/mental-health" },
+        { label: "Healthcare", to: "/healthcare" },
+        { label: "Reproductive", to: "/reproductive-health" },
       ],
     },
     {
       title: "Education",
       buttons: [
-        { label: "Financial Aid", to: "/Financial-aid" },
-        { label: "K-12", to: "/K-12" },
-        { label: "Undocumented", to: "/Undocumented" },
+        { label: "Financial Aid", to: "/financial-aid" },
+        { label: "K-12", to: "/k-12" },
+        { label: "Undocumented", to: "/undocumented" },
       ],
     },
   ];
