@@ -16,6 +16,9 @@ import Healthcare from "./pages/Healthcare.jsx";
 import ReproductiveHealth from "./pages/ReproductiveHealth.jsx";
 import GreenCards from "./pages/GreenCards.jsx";
 import LegalSupport from "./pages/LegalSupport.jsx";
+import DriversLicenses from "./pages/DriversLicenses.jsx";
+import GovernmentAssistance from "./pages/GovernmentAssistance.jsx";
+import Employment from "./pages/Employment.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 createRoot(document.getElementById("root")).render(
@@ -30,6 +33,9 @@ createRoot(document.getElementById("root")).render(
           <Route path="registration" element={<Registration />} />
           <Route path="green-cards" element={<GreenCards />} />
           <Route path="legal-support" element={<LegalSupport />} />
+          <Route path="drivers-licenses" element={<DriversLicenses />} />
+          <Route path="government-assistance" element={<GovernmentAssistance />} />
+          <Route path="employment" element={<Employment />} />
           <Route path="undocumented" element={<Undocumented />} />
           <Route path="k-12" element={<K12 />} />
           <Route path="about" element={<About />} />
