@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import LinkButton from "../components/LinkButton";
 
 function Topics() {
   const topics = [
@@ -46,13 +46,9 @@ function Topics() {
           <hr className="my-4 border-gray-300" />
           <div className="flex gap-4 flex-wrap justify-center items-center">
             {topic.buttons.map((btn, idx) => (
-              <Link
-                key={idx}
-                to={btn.to}
-                className="bg-gray-500 text-white px-8 py-6 rounded-md text-lg font-semibold hover:bg-gray-600 transition flex items-center justify-center"
-              >
+              <LinkButton key={idx} to={btn.to}>
                 {btn.label}
-              </Link>
+              </LinkButton>
             ))}
           </div>
         </div>

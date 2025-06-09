@@ -41,11 +41,8 @@ const About = () => (
     </section>
 
     <section style={{ marginBottom: 32 }}>
-      <h2 style={{ color: "#1e293b" }}>Temp Space (Not sure what else to add)</h2>
+      <h2 style={{ color: "#1e293b" }}></h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae velit ex. Mauris dapibus risus quis suscipit vulputate. 
-        Egestas sed tempus urna et pharetra pharetra massa massa ultricies. Amet dictum sit amet justo donec enim diam vulputate ut pharetra. 
-        Faucibus pulvinar elementum integer enim neque volutpat ac tincidunt vitae. 
       </p>
     </section>
 

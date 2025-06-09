@@ -4,7 +4,7 @@ function LinkButton({ to, children, className = "", ...props }) {
   return (
     <Link
       to={to}
-      className={`block min-w-[12rem] px-4 py-4 bg-teal-600 text-white rounded-xl text-xl font-semibold flex items-center justify-center text-center shadow hover:bg-teal-800 transition ${className}`}
+      className={`block min-w-[12rem] px-4 py-4 bg-emerald-200 text-emerald-900 rounded-xl text-xl font-semibold flex items-center justify-center text-center shadow hover:bg-emerald-100 transition ${className}`}
       {...props}
     >
       {children}

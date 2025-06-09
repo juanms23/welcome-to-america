@@ -24,7 +24,7 @@ function Resources() {
           <hr className="my-4 border-gray-300" />
           <div className="flex flex-wrap justify-center gap-4">
             {form.buttons.map((btn, idx) => (
-              <LinkButton key={idx} to={btn.to} className="bg-gray-400">
+              <LinkButton key={idx} to={btn.to}>
                 {btn.label}
               </LinkButton>
             ))}
