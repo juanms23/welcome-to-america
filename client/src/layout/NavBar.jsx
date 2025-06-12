@@ -3,20 +3,39 @@ import { Link } from "react-router-dom";
 
 function NavBar() {
   useEffect(() => {
-    if (
-      window.google &&
-      window.google.translate &&
-      window.google.translate.TranslateElement
-    ) {
-      new window.google.translate.TranslateElement(
-        {
-          pageLanguage: "en",
-          includedLanguages: "en,es,zh-CN,ar,fr,ru", // Add Spanish and others
-          layout: window.google.translate.TranslateElement.InlineLayout.VERTICAL,
-        },
-        "google_translate_element"
-      );
+    // Helper to load the script only once
+    function loadGoogleTranslateScript(callback) {
+      if (window.google && window.google.translate) {
+        callback();
+        return;
+      }
+      if (!document.getElementById("google-translate-script")) {
+        const script = document.createElement("script");
+        script.id = "google-translate-script";
+        script.src =
+          "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+        script.async = true;
+        document.body.appendChild(script);
+      }
+      window.googleTranslateElementInit = callback;
     }
+
+    loadGoogleTranslateScript(() => {
+      if (
+        window.google &&
+        window.google.translate &&
+        window.google.translate.TranslateElement
+      ) {
+        new window.google.translate.TranslateElement(
+          {
+            pageLanguage: "en",
+            includedLanguages: "en,es,zh-CN,ar,fr,ru",
+            layout: window.google.translate.TranslateElement.InlineLayout.VERTICAL,
+          },
+          "google_translate_element"
+        );
+      }
+    });
   }, []);
 
   return (
