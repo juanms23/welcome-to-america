@@ -1,7 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 function NavBar() {
+  useEffect(() => {
+    if (
+      window.google &&
+      window.google.translate &&
+      window.google.translate.TranslateElement
+    ) {
+      new window.google.translate.TranslateElement(
+        {
+          pageLanguage: "en",
+          includedLanguages: "en,es,zh-CN,ar,fr,ru", // Add Spanish and others
+          layout: window.google.translate.TranslateElement.InlineLayout.VERTICAL,
+        },
+        "google_translate_element"
+      );
+    }
+  }, []);
+
   return (
     <div>
       <nav className="p-4 bg-white flex gap-8 shadow items-center">
@@ -40,6 +57,8 @@ function NavBar() {
         >
           About
         </Link>
+        {/* Google Translate dropdown */}
+        <div id="google_translate_element" className="ml-auto" />
       </nav>
     </div>
   );
